@@ -1,9 +1,9 @@
 package:
   name: shigatyper
-  version: 1.0.0a
+  version: 1.0.4
 
 source:
-  git_url: https://github.com/CFSAN-Biostatistics/shigatyper.git
+  url: https://github.com/CFSAN-Biostatistics/shigatyper/archive/conda-package-1.0.5.tar.gz
 
 build:
   script: python -m pip install --no-deps --ignore-installed .
@@ -26,3 +26,8 @@ about:
   license: Public Domain
   license_family: Public Domain
   summary: Typing tool for Shigella spp. from WGS Illumina sequencing
+
+
+test:
+  commands:
+    - shigatyper -h
